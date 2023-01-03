@@ -1,0 +1,313 @@
+.formCont{
+    width: 70%;
+}
+.form{
+    padding-left: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+    height: 560px;
+}
+.titleDiv{
+    height: 100px;
+}
+.contentDiv{
+    height: 330px;
+}
+.endBtns{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    height: 100px;
+}
+.thankForm{
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.active{
+    display: block !important;
+}
+.formTitle{
+    color: $marine;
+}
+.formCaption{
+    margin-top: -9px;
+    color: $coolGray;
+    font-size: 13px;
+    font-weight: 500;
+}
+.pFree{
+  color: $marine;
+  margin-top: -5px;
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+}
+
+.inputTitle{
+    color:$marine;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 15px;
+    font-weight: bold;
+    margin:  0px 0px 5px 0px;
+}
+.formInput{
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif !important;
+    border: $lightGray 2px solid;
+    height: 35px;
+    width: 80%;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+.formInput:focus{
+    outline: none;
+    border: $purplish 2px solid;
+}
+.formButton{
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: hsl(213, 96%, 18%);
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    float: right;
+    margin-top: 80px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    font-weight: 600;
+}
+.formBack{
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: rgba($color: #ffffff, $alpha: .1);
+    width: 120px;
+    height: 40px;
+    color: $marine;
+    font-weight: 600 !important;
+    float: left;
+    font-size: 16px;
+    margin-top: 80px;
+    border: 0px;
+    cursor: pointer;
+}
+.cardsCont{
+    display: flex;
+    height: 180px;
+}
+.card{
+    height: 120px;
+    width: 100px;
+    border: 2px $lightGray solid;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 20px;
+    transition: .5s;
+}
+.cardActive{
+    border: 2px $purplish solid;
+    background-color: $magnolia;
+}
+.yearlyCard{
+    height: 135px;
+}
+.card:hover{
+    border: 2px $purplish solid;
+    transition: .5s;
+    .arc{
+        scale: 1.2;
+    }
+    .adv{
+        scale: 1.2;
+    }
+    .pro{
+        scale: 1.2;
+    }
+}
+.cardImg{
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.plan{
+    color: $marine;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: bold;
+}
+.gCard{
+    background-color: $magnolia;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 60px;
+    margin-top: 25px;
+    position: static;
+}
+.finishCard{
+    background-color: $magnolia;
+    width: 88%;
+    border-radius: 10px;
+    padding: 15px;
+}
+.planDiv{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: -5px 0px 0px 0px;
+}
+.addonDiv{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: -5px 0px 0px 0px;
+}
+.divActive{
+    display: flex !important;
+}
+.dDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+}
+.fAddons{
+    color: $coolGray;
+    font-size: 15px;
+    font-weight: 400;
+}
+.fmAddons{
+    color: $marine;
+    font-size: 14px;
+    font-weight: 500;
+}
+.divider{
+    height: 2px;
+    background-color: $lightGray;
+    width: 90%;
+}
+.option{
+    color: $marine;
+    font-weight: 600;
+    margin: 15px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $marine;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+.slider.round {
+    border-radius: 34px;
+  }  
+.slider.round:before {
+    border-radius: 50%;
+  }
+.grid{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px $purplish solid;
+    margin: 0px 15px 15px 15px;
+    background-color: white;
+    transition: .4s;
+  }  
+.grid:has(input[type=checkbox]:checked){
+    background-color: $magnolia;
+    transition: .4s;
+  }
+  
+  .md1{
+    width: 20%;
+  }
+  .md2{
+    width: 60%;
+  }
+  .value{
+    color: $purplish;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    transform: translateX(10px);
+  }
+  .resultDiv{
+    padding: 0px 0px 0px 25px;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .totalP{
+    color: $coolGray;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .valP{
+    color: $purplish;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .limit{
+    width: 60%;
+    line-height: 20px;
+}
+.bcCard{
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+.bwImg{
+    width: 160px;
+    height: 160px;
+}
+.bcColor{
+    position: absolute;
+    inset: 0;
+    background-image: $bg-img;
+    background-size: cover;
+
+    mask-image: $bg-mask;
+    mask-size: cover;
+    animation: addColor 700ms steps(22) forwards;
+}
+
+@keyframes addColor{
+    0% {
+        mask-position: 50%;
+    }
+    0% {
+        mask-position: 100%;
+    }
+}

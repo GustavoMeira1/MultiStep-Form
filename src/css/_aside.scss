@@ -1,0 +1,62 @@
+
+.sidebar{
+    border-radius: 10px;
+}
+.container{
+    position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 300px;
+  left: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.step {
+    position: relative;
+    min-height: 1em;
+    color: white;
+  }
+  .title {
+    margin-left: 20px;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    color: $coolGray;
+  }
+  .caption {
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+  .step + .step {
+    margin-top: 1.5em
+  }
+  .step > div:first-child {
+    position: static;
+    height: 0;
+  }
+  .step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+  }
+.circle {
+    position: relative;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.5em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px #fff;
+  }
+  .step:last-child .circle:after {
+    display: none
+  }
+  .step.step-active .circle {
+    background-color: $lightBlue;
+    color: black;
+  }
